@@ -14,8 +14,6 @@ const scriptHash = inProduction ? 'chunkhash' : 'hash';
 module.exports = {
   entry: {
     app: glob.sync('./resources/assets/+(s[ac]ss|js)/main.+(s[ac]ss|js)'),
-    login: glob.sync('./resources/assets/+(s[ac]ss|js)/login.+(s[ac]ss|js)'),
-    admin: glob.sync('./resources/assets/+(s[ac]ss|js)/admin.+(s[ac]ss|js)'),
     vendor: ['jquery', 'vue'],
   },
   output: {
